@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wen Yi's First Website - HTML, CSS, JavaScript</title>
+</head>
+<body class="document">
+    <div class="flex-container">
+        <h1>Welcome Recruit Wens</h1>
+        <p>Click the button to toggle the visibility of the paragraph below:</p>
+        <p id="Harry Potter">This is a paragraph whose visibility will change upon toggling of the button below. The way it works is by using JavaScript to control the visibility of the paragaph. This is the first time Recruit Wen is doing this: <br>The paragraph is assinged an id="Harry Potter" while the toggle button has id assigned as "invisibility cloak". I have defined a class called "cloaked" in the style.css file which sets the display of the paragraph to <i>none</i>. <br>I am using <code>document.getElementById()</code> (defined in script.js) to retrieve the html elements to be manipulated via JavaScript. The button checks for whether "cloaked" is in the list of classNames of the paragaph using <code>paragraph.classList</code>. <br>If it is, it is removed and the text of the button is changed to "cloak". If it is not, "cloaked" is added to the classList, which then applies the display defined in style.css to the paragraph and hides it.</p>
+        
+        <button id="invisibility cloak" onclick="cloakParagraph()">Cloak</button>
+        <p>Type in a color to change the background color of the box below:</p>
+        <input id="color-input" type="text" placeholder="Color" onchange="changeColor()"/>
+        <input id="padding-slider" type="range" min="0" max="100" value="50" onchange="changePadding()"/>
+        <div class="color-box"></div>
+    </div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
