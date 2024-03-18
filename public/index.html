@@ -14,7 +14,7 @@
         
         <button id="invisibility cloak" onclick="cloakParagraph()">Cloak</button>
         <p>Type in a color to change the background color of the box below:</p>
-        <input id="color-input" type="text" placeholder="Color" onchange="changeColor()"/>
+        <input id="color-input" class="input" pattern="[A-Za-z]+" type="text" placeholder="Color" onchange="changeColor()"/>
         <input id="padding-slider" type="range" min="0" max="100" value="50" onchange="changePadding()"/>
         <div class="color-box"></div>
     </div>
